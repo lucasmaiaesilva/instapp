@@ -1,7 +1,14 @@
 import React from 'react'
 
+import Hash from './Hash'
+import Header from './Header'
+import Content from './Content'
+
 const App = () => (
-  <h1> Olá mundo </h1>
+  <div className="instapp">
+    <Header />
+    <Content />
+  </div>
 )
 
 export default App
