@@ -1,0 +1,83 @@
+.header
+  background baseBgColor
+  padding 1.8rem 0
+
+
+  &__logo
+    display flex
+    align-items center
+    justify-content center
+    svg
+      fill baseLinkColor
+    h1
+      font-family: 'Yellowtail', cursive
+      color baseLinkColor
+      font-size 3rem
+  &__icon
+    width 90px
+
+
+  &__handler
+    width 40%
+    margin 0 auto
+    &__text
+      margin 20px 0
+      color baseFgColor
+      text-align center
+      font-size 1.8rem
+      text-transform uppercase
+      font-family: 'Hammersmith One', sans-serif
+    
+    &__form
+      box-sizing border-box
+      background headBoxBgColor
+      display flex
+      margin 0 auto
+      border-radius 8px 0 0 8px
+    &__input
+      outline none
+      margin .5rem
+      padding 0.3rem
+      font-size 1.2rem
+      flex-grow 1
+      border none
+    &__submit
+      width 50px
+      font-weight bold
+      font-size 2rem
+      outline none
+      border none
+      color rgba(0,0,0,.5)
+      &:hover
+        background rgba(255,255,255,.4)
+        cursor pointer
+
+    &__hashes
+      margin-top 1rem
+      display flex
+      flex-wrap wrap
+      justify-content center
+      &--hash
+        margin .5rem
+        display block
+        background baseStrongColor
+        color baseLinkColor
+        border-radius .3rem
+        padding .5rem
+        position relative
+        .text
+          &:hover
+            text-decoration underline
+            cursor pointer
+        .close
+          cursor pointer
+          position absolute
+          top -10px
+          right -10px
+          width 20px
+          background baseStrongColor
+          text-align center
+          line-height 20px
+          border-radius 50%
+          font-size 1rem
+          color baseLinkColor
