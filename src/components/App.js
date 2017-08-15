@@ -3,13 +3,13 @@ import React, { Component } from 'react'
 import Hash from './Hash'
 import Header from './Header'
 import Content from './Content'
+import result from '../data'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      hashes: ['GaloDoido', 'LoveGolden'],
-      result: [],
+      hashes: ['snow', 'findChuckNorris'],
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.closeHash = this.closeHash.bind(this)
@@ -19,9 +19,12 @@ class App extends Component {
     console.log('submited')
   }
   closeHash (e) {
-    console.log(e.target.id)
+    let arrHashes = this.state.hashes
+    arrHashes.splice(e.target.id, 1)
+    this.setState({ hashes: arrHashes })
   }
   render () {
+    // console.log(result.data.map((item) => item.images.standard_resolution.url))
     return (
       <div className="instapp">
         <Header
