@@ -16,10 +16,10 @@ describe('<Form />', () => {
     expect(wrapper.length).to.be.equal(1)
   })
   it('did the handleChange property exists on the proptype of the component?', () => {
-    expect(NewsForm.propTypes).to.have.a.property('handleChange')
+    expect(Form.propTypes).to.have.a.property('handleChange')
   })
   it('did the handleSubmit property exists on the proptype of the component?', () => {
-    expect(NewsForm.propTypes).to.have.a.property('handleSubmit')
+    expect(Form.propTypes).to.have.a.property('handleSubmit')
   })
   it('looking for a form tag', () => {
     expect(wrapper.find('form')).to.exist
