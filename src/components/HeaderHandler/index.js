@@ -12,7 +12,11 @@ const HeaderHandler = props => (
     <div className="header__handler__text">
       insert your hashtag here
     </div>
-    <Form handleSubmit={props.handleSubmit} />
+    <Form
+      handleSubmit={props.handleSubmit}
+      handleChange={props.handleChange}
+      inputValue={props.inputValue}
+      />
     <div className="header__handler__hashes">
       {HashesResult(props.closeHash, props.hashes)}
     </div>

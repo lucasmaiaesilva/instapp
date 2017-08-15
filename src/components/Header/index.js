@@ -8,7 +8,9 @@ const Header = props => (
     <HeaderHandler
       closeHash={props.closeHash}
       handleSubmit={props.handleSubmit}
+      handleChange={props.handleChange}
       hashes={props.hashes}
+      inputValue={props.inputValue}
     />
   </header>
 )
