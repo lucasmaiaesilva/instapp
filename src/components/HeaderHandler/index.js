@@ -3,8 +3,8 @@ import React from 'react'
 import Form from '../Form'
 import Hash from '../Hash'
 
-const HashesResult = (closeHash, hashes) => (
-  hashes.map((hash, index) => <Hash key={hash+index} closeHash={closeHash} id={index} text={hash} />)
+const HashesResult = (closeHash, hashes, clickHash) => (
+  hashes.map((hash, index) => <Hash key={hash + index} clickHash={clickHash} closeHash={closeHash} id={index} text={hash} />)
 )
 
 const HeaderHandler = props => (
@@ -18,7 +18,7 @@ const HeaderHandler = props => (
       inputValue={props.inputValue}
       />
     <div className="header__handler__hashes">
-      {HashesResult(props.closeHash, props.hashes)}
+      {HashesResult(props.closeHash, props.hashes, props.clickHash)}
     </div>
   </div>
 )

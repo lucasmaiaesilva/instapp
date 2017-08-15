@@ -7,6 +7,7 @@ const Header = props => (
     <Logo />
     <HeaderHandler
       closeHash={props.closeHash}
+      clickHash={props.clickHash}
       handleSubmit={props.handleSubmit}
       handleChange={props.handleChange}
       hashes={props.hashes}
